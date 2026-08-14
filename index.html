@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>Seatwork 1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Source Code Pro', monospace;
+            margin: 0;
+            padding: 30px 20px;
+            text-align: center;
+            background-color: #020202;
+            color: #3b8057;
+        }
+
+        h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #46c221;
+            text-align: center;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            color: #3b8057;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        .editor-window {
+            width: 90%;
+            max-width: 850px;
+            margin: 0 auto;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #1a3821;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 15px rgba(0, 255, 102, 0.1);
+            background-color: #030f05;
+            text-align: left;
+        }
+        .editor-header {
+            background-color: #08180c;
+            padding: 10px 16px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #14301a;
+        }
+        .editor-tab {
+            background-color: #030f05;
+            color: #214630;
+            padding: 4px 370px;
+            border-radius: 6px 6px 0 0;
+            font-size: 13px;
+            border: 1px solid #14301a;
+            border-bottom: none;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .python-content {
+            padding: 24px;
+            min-height: 750px;
+            font-family: 'Source Code Pro', monospace;
+            color: #46c221;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ICT 10<br>Seatwork #1</h1>
+    <h2>OUTPUT:</h2>
+
+    <div class="editor-window">
+        <div class="editor-header">
+            <div class="window-dots">
+                <span class="dot dot-close"></span>
+                <span class="dot dot-minimize"></span>
+                <span class="dot dot-maximize"></span>
+            </div>
+            <div class="editor-tab">
+                <span>main.py</span>
+            </div>
+        </div>
+
+        <div class="python-content" id="output">
+            <py-script src="main.py"></py-script>
+        </div>
+    </div>
+
+</body>
+</html>
